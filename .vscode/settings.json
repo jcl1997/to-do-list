@@ -1,0 +1,5 @@
+{
+    "yaml.schemas": {
+        "swaggerviewer:openapi": "file:///workspaces/to-do-list/swagger.yaml"
+    }
+}
