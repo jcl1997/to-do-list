@@ -22,7 +22,7 @@ paths:
           description: Task not found
         '405':
           description: Validation exception
-  /tasks/{findTasks}:
+  /tasks:
     get:
       tags:
         - task
@@ -80,7 +80,7 @@ paths:
                 $ref: '#/components/schemas/Task'
         '405':
           description: Invalid input
-  /task/{taskId}:
+  /task/:taskId:
     get:
       tags:
         - task
@@ -175,7 +175,7 @@ paths:
           description: Task not found
         '405':
           description: Validation exception
-  /task/{taskId}/concluded:
+  /task/:taskId/concluded:
     patch:
       tags:
         - task
@@ -206,7 +206,7 @@ paths:
           description: Task not found
         '405':
           description: Validation exception
-  /task/{taskId}/unconcluded:
+  /task/:taskId/unconcluded:
     patch:
       tags:
         - task
