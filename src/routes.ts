@@ -1,4 +1,4 @@
-import express from "express";
+import express, { Request, Response } from "express";
 import path from "path";
 import {
   concluded,
@@ -16,7 +16,8 @@ import findTaskOrAnErrorThrown from "./app/middlewares/findTaskOrAnErrorThrown";
 
 const routes = express.Router();
 
-routes.get("/", function (req, res) {
+// tslint:disable-next-line
+routes.get("/", function (req: Request, res: Response) {
   res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 routes.get("/tasks", getAll);

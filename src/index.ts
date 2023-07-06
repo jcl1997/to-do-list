@@ -19,6 +19,7 @@ app.use(express.static(path.join(__dirname, "build")));
 app.use("/", routes);
 
 app.listen(port, () => {
+  // tslint:disable-next-line
   console.log(
     `⚡️[server]: Server is running at http://localhost:${port}`,
   );

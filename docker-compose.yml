@@ -11,7 +11,7 @@ services:
     image: mysql:5.7
     container_name: share_db
     volumes:
-      - ./db:/docker-entrypoint-initdb.d
+      - ./mysql:/docker-entrypoint-initdb.d
     ports:
       - 3306:3306
     command: --default-authentication-plugin=mysql_native_password
