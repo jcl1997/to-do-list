@@ -1,9 +1,6 @@
 {
-    "yaml.schemas": {
-        "swaggerviewer:openapi": "file:///workspaces/to-do-list/swagger.yaml"
-    },
-    "cSpell.words": [
-        "Excluido",
-        "fortawesome"
-    ]
+  "yaml.schemas": {
+    "swaggerviewer:openapi": "file:///workspaces/to-do-list/swagger.yaml"
+  },
+  "cSpell.words": ["Excluido", "Formik", "fortawesome"]
 }

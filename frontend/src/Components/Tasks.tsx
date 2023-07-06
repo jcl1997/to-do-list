@@ -1,12 +1,11 @@
-import React from "react";
-import useTaskList, {
+import ItemTask from "./ItemTask";
+import FormHeader from "./FormHeader";
+import UseTaskList, {
   ITask,
 } from "../Services/UseTasksList";
-import FormHeader from "./FormHeader";
-import ItemTask from "./ItemTask";
 
 export default function Tasks() {
-  const { list, setList } = useTaskList();
+  const { list, setList } = UseTaskList();
 
   const setTasks = () => {
     return list.map((item: ITask) => {

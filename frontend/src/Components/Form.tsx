@@ -1,9 +1,8 @@
-import { useFormik } from "formik";
 import * as Yup from "yup";
-import { ITask } from "../Services/UseTasksList";
-import UseUpdateTask from "../Services/UseUpdateTask";
 import { useEffect } from "react";
-import React from "react";
+import { useFormik } from "formik";
+import UseUpdateTask from "../Services/UseUpdateTask";
+import { ITask } from "../Services/UseTasksList";
 
 export interface IFormTask {
   item: ITask;

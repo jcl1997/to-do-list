@@ -1,7 +1,7 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { ITask } from "../Services/UseTasksList";
-import UseCreateTask from "../Services/UseCreateTask";
+import CreateTask from "../Services/CreateTask";
 import FindTasks from "../Services/FindTasks";
 
 interface IFormHeader {
@@ -29,7 +29,7 @@ export default function FormHeader({
       task: isRequired,
     }),
     onSubmit: async values => {
-      const itemNew: ITask | void = await UseCreateTask({
+      const itemNew: ITask | void = await CreateTask({
         form: values,
         setFieldError: formTask.setFieldError,
       });

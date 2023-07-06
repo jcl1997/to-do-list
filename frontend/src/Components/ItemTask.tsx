@@ -1,14 +1,13 @@
+import { Fragment, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ITask } from "../Services/UseTasksList";
 import {
   faClose,
   faPen,
 } from "@fortawesome/free-solid-svg-icons";
-import UseRemoveTask from "../Services/UseRemoveTask";
 import Checkbox from "./Checkbox";
 import Form from "./Form";
-import { Fragment, useState } from "react";
-import React from "react";
+import RemoveTask from "../Services/RemoveTask";
+import { ITask } from "../Services/UseTasksList";
 
 interface IItemTask {
   item: ITask;
@@ -50,7 +49,7 @@ export default function ItemTask({
               icon={faClose}
               title="Remove tarefa"
               onClick={() => {
-                UseRemoveTask({
+                RemoveTask({
                   list,
                   setList,
                   item: current,
